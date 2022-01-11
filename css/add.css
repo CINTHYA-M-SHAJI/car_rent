@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body  
+{  
+    margin: 0;  
+    padding: 0; 
+    padding-top: 100px;
+    padding-right: 100px; 
+    background-color:#f8d188f3;  
+    font-family: 'Arial'; 
+    font-size: 50px;
+    background-image: url("imagec.webp");
+    opacity: 0.9px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-resolution: 84 ; 
+}  
+
+div.main{
+    width: 300px;
+    margin: 100px auto 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  div.register{
+    background-color: rgba(0, 0, 0, 0.938);
+    width: 400px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(14, 13, 13);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    color: rgb(255, 255, 255); 
+    padding: 20px;
+  }
+
+  input{
+    width: 245px;
+    margin-right: 8px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding-left: 10px;
+    padding: 7px;
+    margin-left: 50px;
+    background-color: #fff
+    
+  }
+  
+  td{
+      padding-bottom: 10px;
+    
+  }
+  
+  input#submit {
+    box-align: center;
+    width: 120px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(255, 8, 8, 0.849);
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255,0.3);
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 30%);
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-left: 132px;
+ }
+
+ select{
+    padding-bottom: 15px;
+    margin-left: 68px;
+    padding-right: 180px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+ 
+
+ h1{
+    text-align: center;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200px;
+    color: rgba(255, 8, 8, 0.849);
+  }

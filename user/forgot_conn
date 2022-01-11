@@ -1,0 +1,32 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "akhil@123@12";
+$dbname = "car_rent";
+
+// Create connection
+$con = mysqli_connect($servername, $username, $password, $dbname);
+
+// Check connection
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+$email=$_GET['email'];
+$password=$_GET['password'];
+$password1=$_GET['password1'];
+if($password==$password1)
+{
+
+$q="update user set password='$password' where email='$email'";
+$db->updateQuery($q);
+echo "<script> alert('Successfully Changed');window.location='login.php'; </script>";
+
+}
+
+else
+{
+	echo "<script> alert('Password not matched,try again.');window.location='forgot_pass.php'; </script>";
+
+}
+?>

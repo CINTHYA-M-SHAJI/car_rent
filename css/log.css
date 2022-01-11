@@ -1,0 +1,43 @@
+
+body
+        {
+            background-image: url("../images/photocar.jpg");
+            background-size: 1400px,600px;
+            background-repeat: no-repeat;
+            image-resolution: 84 ;
+        }
+
+        .btn{
+            width: 95px;
+            height: 40px;
+            background: #ffa008;
+            margin-top: 15px;
+            border: 2px solid #fcdfa2;
+            margin-bottom: 20px;
+            color: #fff;
+            font-size: 15px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+          
+          }
+          
+          form{
+            background-color: rgb(240, 235, 233);
+            padding-top: 50px;
+            opacity: 0.9;
+            height: 160px;
+            margin-top: 180px;
+            margin-left: 500px;
+            margin-right: 500px;
+            font-size: 20px;
+            font-weight: 300;
+            border-radius: 20px;
+          }
+
+          input {
+            padding-bottom: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            width: 180px;
+        }
