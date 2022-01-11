@@ -15,8 +15,10 @@
 <form align='center'>
   <h1><center>CAR RENTAL SYSTEM</center></h1>
   <h2><center>Rent your Car</center></h2>
-  <button formaction="../car_rent/user/login.php">USER LOGIN</a></button>
+  
   <button formaction="../car_rent/admin/login.php">ADMIN LOGIN</a></button>
+  <button formaction="../car_rent/user/login.php">USER LOGIN</a></button>
+  
   <br><br>
   <center><button formaction="../car_rent/user/user_registration.php">Sign Up</a></button></center>
 </body>

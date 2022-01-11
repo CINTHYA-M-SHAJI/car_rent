@@ -6,13 +6,10 @@
 <style>
    body  
 {  
-    margin: 0;  
-    padding: 0; 
-    padding-top: 15px;
-    padding-left: 355px;
-    padding-right: 100px; 
+    
     background-color:#f8d188f3;  
     font-family: 'Arial'; 
+    
     background-image: url("../images/car1.jpg");
     opacity: 0.9px;
     background-size: cover;
@@ -27,11 +24,17 @@ a{
 
 </head>
 
-<body align="right">
+<body>
+<h1 align='center'>CAR RENTAL SYSTEM
+<br>
 
-<a href="add_car.php">ADD CAR</a> &nbsp;
-<a href="view_user.php">VIEW USER</a> &nbsp;
-<a href="view_car.php">VIEW CAR</a> &nbsp;
+<right>
+<a href="add_car.php"><button>ADD CAR</button></a> &nbsp;
+<a href="view_user.php"><button>VIEW USER</button></a> &nbsp;
+<a href="view_car.php"><button>VIEW CAR</button></a> &nbsp;
 <a href="../index.php"><button>LOGOUT</button></a>
+</right>
+</h1>
+
 </body>
 </html>
