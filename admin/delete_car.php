@@ -1,17 +1,29 @@
 <html>
 <head>
 <title>Delete CAR</title>
+<style>
+
+body
+        {
+            background-image: url("../images/imge.jpg");
+            background-size: 1400px,600px;
+            background-repeat: no-repeat;
+            image-resolution: 84 ;
+        }
+
+</style>
 </head>
 <body>
 
        
-<a href="view_plant.php">
+<a href="../admin/view_car.php">
     <p align="right">HOME</p>
     </a>
 <form align='center' style='color:black;margin-top:250px'method="POST" action="">
-CAR ID:<input type="text" name="cid" ><br><br>
-<button name="submit" value="submit">Submit</button><br>
-<a href="view_car.php">View Update</a>
+CAR ID:<input type="text" name="cid" >
+<button name="submit" value="submit">Submit</button><br><br>
+<br>
+<button><a href="../admin/view_car.php">View car</a></button>
 </form>
 <?php
 $servername="localhost";

@@ -17,12 +17,16 @@ while($row= mysqli_fetch_array($query)){
     echo "<tr><th>CAR ID</th><td style='border: solid 1px black;'>".$row['cid']."</td></tr>";
     $cid=$row['cid'];
     echo "<tr><th>TYPE</th><td style='border: solid 1px black;'>".$row['ctype']."</td></tr>";
-    echo "<tr><th>MODEL</th><td style='border: solid 1px black;'>".$row['model']."</td></tr>";
+    echo "<tr><th>MODEL</th><td style='border: solid 1px black;'>".$row['model']."</td></tr>"; 
+    $model=$row['model'];
+    echo "<tr><th>STOCK</th><td style='border: solid 1px black;'>".$row['stock'] ."</td></tr>";
+    $stock=$row['stock'];
     echo "<tr><th>BRAND</th><td style='border: solid 1px black;'>".$row['brand']."</td></tr>";
-    echo "<tr><th>AMOUNT</th><td style='border: solid 1px black;'>"."$".$row['amount']."</td></tr>";
+    $brand=$row['brand'];
+    echo "<tr><th>AMOUNT PER DAY</th><td style='border: solid 1px black;'>"."₹".$row['amount']."</td></tr>";
     $amount=$row['amount'];
-    echo "<tr><th>STOCK</th><td style='border: solid 1px black;'>".$row['stoke'] ."</td></tr><tr><th>IMAGE</th><td>";
-    $stoke=$row['stoke'];
+    echo "<tr><th>IMAGE</th><td>";
+
 
             $pathx = "../images/";
             $file = $row["image"];
@@ -42,15 +46,16 @@ echo "</table>";
 </head>
  <body>
 <div>
-     <form action="../user/booking.php" method="post">  
+     <form action="booking.php" align='center'method="post">  
      <input type="hidden" readonly name="userid" value="<?php echo $userid;?>"><br>
      <input type="hidden" readonly name="cid" value="<?php echo $cid;?>"><br>
      <input type="hidden" readonly name="model" value="<?php echo $model;?>"><br>
      <input type="hidden" readonly name="brand" value="<?php echo $brand;?>"><br>
      <input type="hidden" readonly name="amount" value="<?php echo $amount;?>"><br>
-     <input type="hidden" readonly name="stock" value="<?php echo $stock;?>"><br>
-      Booking Date: <input type="date" select name="bdate" class="custom-select"><br><br><br>
-      Return Date: <input type="date" select name="rdate" class="custom-select">
+     <input type="hidden" readonly name="stock" value="<?php echo $stock;?>">
+      Quantity: &nbsp; <input type="text" name="qty" required><br><br>
+      Booking Date: <input type="date"  select name="bdate" class="custom-select" required><br><br>
+      Return Date: <input type="date" select name="rdate" class="custom-select" required>
          <input type="submit" value="BOOK">
     </form>
      

@@ -31,6 +31,7 @@ a{
 <right>
 <a href="add_car.php"><button>ADD CAR</button></a> &nbsp;
 <a href="view_user.php"><button>VIEW USER</button></a> &nbsp;
+<a href="view_booking.php"><button>BOOKING DETAILS</button></a> &nbsp;
 <a href="view_car.php"><button>VIEW CAR</button></a> &nbsp;
 <a href="../index.php"><button>LOGOUT</button></a>
 </right>

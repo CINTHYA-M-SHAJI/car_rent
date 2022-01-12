@@ -40,8 +40,8 @@ body
     <input type="radio" value="female"/>F</td></tr>-->
 </table>
 <center><input type="submit" value="UPDATE"></center>
-<br>
-<a href="user_profile.php"><center><button>Home</button></center></a>
+
+<center><button><a href="user_home.php">Home</a></button></center>
 </form>
 </body>
 </html>

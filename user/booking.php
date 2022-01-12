@@ -19,22 +19,25 @@
     $amount= $_POST['amount'];
     $bdate= $_POST['bdate'];
     $rdate= $_POST['rdate'];
-    $stoke= $_POST['stock'];
-   
-if($stoke<$qty){
-  die("Insufficient Stock");
+    $stock= $_POST['stock'];
+    $qty=$_POST['qty'];
+
+if($stock<$qty){
+  echo("Insufficient Stock");
+  header('Location:../user/book_car.php');
 }
 
-    $sql = "INSERT INTO book (userid, `cid`,model amount, bdate, rdate, stock)
-    VALUES ('$userid', '$cid', '$model', '$amount', '$bdate', '$rdate', '$stock')";
+    $sql = "INSERT INTO book (userid, `cid`,model, amount, bdate, rdate, stock)
+    VALUES ('$userid', '$cid', '$model', '$amount', '$bdate', '$rdate', '$qty')";
 
-    $sql1 = "UPDATE plant set stock=stock-'$qty' where cid='$cid'";
+    $sql1 = "UPDATE car set stock=stock-'$qty' where cid='$cid'";
     
     if($con->query($sql) === TRUE) {
+      if($con->query($sql1) === TRUE) {
       
-    if ($con->query($sql1) === TRUE) {
       echo "Booking successfully";
-    } }else {
+      header('Location:../user/view_car_user.php');
+    }}else {
       echo "Error: " . $sql . "<br>" . $con->error;
     }
     

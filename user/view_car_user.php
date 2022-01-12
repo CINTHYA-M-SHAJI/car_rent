@@ -1,9 +1,11 @@
 <html><body>
  <form action="book_car.php" method="POST">    
- Item ID:<input type="text" name="pid"autofocus/>
+ Item ID:<input type="text" name="cid"autofocus/>
 <input type="hidden" readonly value="<?php session_start(); $userid=$_SESSION['userid']; echo $userid; ?>">
  <input type="submit" value="BOOK">
+ 
 </form>
+<a href="../user/user_home.php"><button>HOME</button></a>
 </body></html><?php
     $servername = "localhost";
     $username = "root";

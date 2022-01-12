@@ -29,7 +29,7 @@ body
 <tr><td>Licence:</td>
 <td><input type="text" name="licence"  maxlength="12" minlength="12" required></td></tr>
 <tr><td>Password:</td>
-<td><input type="text" name="password" minlength="6" required autofocus></td></tr>
+<td><input type="password" name="password" minlength="6" required autofocus></td></tr>
 
 
 </table>
